@@ -7,6 +7,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Example1
 {
     public static void main( String[] args ){
+        System.out.println("\n============= This is Example 1 =============\n");
+
         Vehicle vehicle = new Vehicle();
         vehicle.setName("Honda City");
         System.out.println("Vehicle name from non-spring context is: " + vehicle.getName());

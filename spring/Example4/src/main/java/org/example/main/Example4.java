@@ -4,13 +4,14 @@ import org.example.beans.Vehicle;
 import org.example.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class Example2
+public class Example4
 {
     public static void main( String[] args ){
-        System.out.println("\n============= This is Example 2 =============\n");
+        System.out.println("\n============= This is Example 4 =============\n");
 
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
-        Vehicle veh = context.getBean("vehicle1", Vehicle.class);
-        System.out.println("vehicle name from spring context is: " + veh.getName());
+
+        Vehicle veh1 = context.getBean(Vehicle.class);
+        System.out.println("Vehicle name from spring context is: " + veh1.getName());
     }
 }
