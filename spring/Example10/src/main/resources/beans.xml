@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding="UTF-8" ?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+                            https://www.springframework.org/schema/beans/spring-beans.xsd"
+
+>
+
+
+    <!-- First Vehicle bean -->
+    <bean id="vehicle1" class="org.example.beans.Vehicle" >
+        <property name="name" value="Honda" />
+    </bean>
+
+    <!-- Second Vehicle bean -->
+    <bean id="vehicle2" class="org.example.beans.Vehicle">
+        <property name="name" value="Yamaha"/>
+    </bean>
+
+</beans>
